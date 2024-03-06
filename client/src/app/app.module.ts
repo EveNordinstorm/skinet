@@ -6,16 +6,19 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
+import { GalleryModule } from './gallery/gallery.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderDetailedComponent
+    OrderDetailedComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,9 @@ import { OrderDetailedComponent } from './order-detailed/order-detailed.componen
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    HomeModule
+    SharedModule,
+    HomeModule,
+    GalleryModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},

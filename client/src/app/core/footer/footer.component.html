@@ -1,73 +1,44 @@
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
+<footer class="bg-black text-center text-white mt-4">
   <div class="container p-4">
-    <!-- Section: Form -->
     <section class="">
       <form action="">
-        <!--Grid row-->
         <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
+          <div class="row">
             <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
+              <strong>Sign Up</strong>
             </p>
           </div>
-          <!--Grid column-->
+          <section class="row mb-4">
+            <p>
+              Join our newsletter to be the first to hear about exclusive deals
+              and get 10% off your first order
+            </p>
+          </section>
 
-          <!--Grid column-->
           <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <!-- <mdb-form-control class="form-white mb-4">
-              <input
-                mdbInput
-                type="email"
-                id="form5Example24"
-                class="form-control"
-              />
-              <label mdbLabel class="form-label" for="form5Example24"
-                >Email address</label
-              >
-            </mdb-form-control> -->
-            <mdb-form-control>
-              <input mdbInput type="text" id="form1" class="form-control" />
-              <label mdbLabel class="form-label" for="form1"
-                >Email Address</label
-              >
-            </mdb-form-control>
+            <form>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="footerEmail"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+            </form>
           </div>
-          <!--Grid column-->
 
-          <!--Grid column-->
-          <div class="col-auto">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-outline-light mb-4">
-              Subscribe
-            </button>
+          <div class="col-auto mb-5">
+            <button type="submit" class="btn btn-active mb-4">Subscribe</button>
           </div>
-          <!--Grid column-->
         </div>
-        <!--Grid row-->
       </form>
     </section>
-    <!-- Section: Form -->
 
-    <!-- Section: Text -->
-    <section class="mb-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio
-        earum repellat quaerat voluptatibus placeat nam, commodi optio pariatur
-        est quia magnam eum harum corrupti dicta, aliquam sequi voluptate quas.
-      </p>
-    </section>
-    <!-- Section: Text -->
-
-    <!-- Section: Links -->
-    <section class="">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    <section class="row">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-4 mb-4">
           <h5 class="text-uppercase">Shop</h5>
 
           <ul class="list-unstyled mb-0">
@@ -82,10 +53,8 @@
             </li>
           </ul>
         </div>
-        <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col col-md-auto mb-4">
           <h5 class="text-uppercase">About</h5>
 
           <ul class="list-unstyled mb-0">
@@ -100,42 +69,37 @@
             </li>
           </ul>
         </div>
-        <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col col-lg-4 mb-4">
           <h5 class="text-uppercase">Follow Us</h5>
 
           <section class="mb-4">
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="#!"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="#!"
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="#!"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <button class="btn social-btn m-2">
+              <img
+                class="social-icon"
+                src="/assets/images/social-icons-01.png"
+                alt="Submit"
+              />
+            </button>
+            <button class="btn social-btn m-2">
+              <img
+                class="social-icon"
+                src="/assets/images/social-icons-02.png"
+                alt="Submit"
+              />
+            </button>
+            <button class="btn social-btn m-2">
+              <img
+                class="social-icon"
+                src="/assets/images/social-icons-03.png"
+                alt="Submit"
+              />
+            </button>
           </section>
         </div>
-        <!--Grid column-->
       </div>
-      <!--Grid row-->
     </section>
-    <!-- Section: Links -->
   </div>
-  <!-- Grid container -->
 
   <div class="text-center p-3">
     <img
@@ -145,6 +109,6 @@
       style="max-height: 60px"
       routerLink="/"
     />
-    <p>Equipped After Dark © 2024</p>
+    <p class="copyright pt-2">Equipped After Dark © 2024</p>
   </div>
 </footer>

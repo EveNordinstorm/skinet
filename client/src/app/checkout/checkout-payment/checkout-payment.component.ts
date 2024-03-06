@@ -4,10 +4,10 @@ import { NavigationExtras, Router } from '@angular/router';
 import { loadStripe, Stripe, StripeCardCvcElement, StripeCardExpiryElement, StripeCardNumberElement } from '@stripe/stripe-js';
 import { ToastrService } from 'ngx-toastr';
 import { firstValueFrom } from 'rxjs';
-import { BasketService } from 'src/app/basket/basket.service';
-import { Basket } from 'src/app/shared/models/basket';
-import { OrderToCreate } from 'src/app/shared/models/order';
-import { Address } from 'src/app/shared/models/user';
+import { BasketService } from 'app/basket/basket.service';
+import { Basket } from 'app/shared/models/basket';
+import { OrderToCreate } from 'app/shared/models/order';
+import { Address } from 'app/shared/models/user';
 import { CheckoutService } from '../checkout.service';
 
 @Component({

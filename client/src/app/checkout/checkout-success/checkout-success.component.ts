@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Order } from 'src/app/shared/models/order';
+import { Order } from 'app/shared/models/order';
 
 @Component({
   selector: 'app-checkout-success',

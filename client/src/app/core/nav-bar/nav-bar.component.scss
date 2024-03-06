@@ -1,10 +1,14 @@
+$purple: #a61ed3;
+$green: #0df733;
+$orange: #f27a2a;
+
 .cart-no {
     position: absolute;
     min-height: 25px;
     min-width: 25px;
     border-radius: 50%;
     background: blue;
-    color: white;
+    color: #fff;
     text-align: center;
     top: -12px;
     right: 32px;
@@ -12,13 +16,43 @@
 
 a {
     text-decoration: none;
-    color: #343a40;
+    color: #fff;
 
     &.active {
-        color: orange
+        color: #{$green}
     }
 }
 
 .logo {
     cursor: pointer;
+}
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: 0;
+    padding: 0.5rem 2vw;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: #{$purple};
+    &:hover {
+        color: #{$purple};
+		background-color: #fff;
+	}
+}
+
+.btn-green {
+    color: #000;
+    background-color: #{$green};
+    &:hover {
+        color: #000;
+		background-color: #fff;
+	}
 }

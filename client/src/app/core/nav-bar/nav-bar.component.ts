@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AccountService } from 'src/app/account/account.service';
-import { BasketService } from 'src/app/basket/basket.service';
-import { BasketItem } from 'src/app/shared/models/basket';
+import { AccountService } from 'app/account/account.service';
+import { BasketService } from 'app/basket/basket.service';
+import { BasketItem } from 'app/shared/models/basket';
 
 @Component({
   selector: 'app-nav-bar',

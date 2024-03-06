@@ -12,6 +12,7 @@ import { StepperComponent } from './components/stepper/stepper.component';
 import {CdkStepperModule} from '@angular/cdk/stepper';
 import { BasketSummaryComponent } from './basket-summary/basket-summary.component';
 import { RouterModule } from '@angular/router';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     BsDropdownModule.forRoot(),
     CdkStepperModule,
-    RouterModule
+    RouterModule,
+    NgxSpinnerModule
   ],
   exports: [
     PaginationModule,
@@ -43,7 +45,8 @@ import { RouterModule } from '@angular/router';
     TextInputComponent,
     StepperComponent,
     CdkStepperModule,
-    BasketSummaryComponent
+    BasketSummaryComponent,
+    NgxSpinnerModule
   ]
 })
 export class SharedModule { }

@@ -1,16 +1,99 @@
-<carousel [isAnimated]="true">
-    <slide>
-        <img src="assets/images/hero1.jpg" alt="slide" style="display: block; width: 100%;">
+<div class="home-container">
+  <carousel [isAnimated]="true">
+    <slide class="hero-container">
+      <a routerLink="/shop" class="btn btn-green btn-hero-1 text-uppercase"
+        >Shop Now</a
+      >
+      <img
+        class="hero-img"
+        src="assets/images/Hero-01.jpg"
+        alt="slide"
+        style="display: block; width: 100%"
+      />
     </slide>
-    <slide>
-        <img src="assets/images/hero2.jpg" alt="slide" style="display: block; width: 100%;">
+    <slide class="hero-container">
+      <a routerLink="/shop" class="btn btn-orange btn-hero-2 text-uppercase"
+        >Browse</a
+      >
+      <img
+        class="hero-img"
+        src="assets/images/Hero-02.jpg"
+        alt="slide"
+        style="display: block; width: 100%"
+      />
     </slide>
-    <slide>
-        <img src="assets/images/hero3.jpg" alt="slide" style="display: block; width: 100%;">
+    <slide class="hero-container">
+      <a routerLink="/gallery" class="btn btn-purple btn-hero-3 text-uppercase"
+        >View Gallery</a
+      >
+      <img
+        class="hero-img"
+        src="assets/images/Hero-03.jpg"
+        alt="slide"
+        style="display: block; width: 100%"
+      />
     </slide>
-</carousel>
-<section class="featured">
-    <div class="d-flex justify-content-center pt-4">
-        <h1>Welcome to the Shop!</h1>
+  </carousel>
+
+  <section class="featured">
+    <div class="d-flex justify-content-center text-black">
+      <strong class="text-uppercase font-weight-bold"
+        >Be prepared for anything</strong
+      >
     </div>
-</section>
+  </section>
+
+  <section class="d-flex flex-column flex-lg-row justify-content-center">
+    <div
+      style="width: 350px; height: auto"
+      class="home-card rounded-3 bg-white shadow my-3 mx-auto mx-lg-3"
+    >
+      <img
+        style="width: 350px; height: 400px"
+        class="home-card-img object-fit-cover rounded-top-3"
+        src="assets/images/gallery-images/10380597.jpg"
+        alt=""
+      />
+      <div class="m-3">
+        <h4 class="text-center">After Dark Reflective Jacket</h4>
+        <div class="d-flex justify-content-center block">
+          <button class="btn btn-purple m-3 w-75 text-uppercase">View</button>
+        </div>
+      </div>
+    </div>
+    <div
+      style="width: 350px; height: auto"
+      class="home-card rounded-3 bg-white shadow my-3 mx-auto mx-lg-3"
+    >
+      <img
+        style="width: 350px; height: 400px"
+        class="home-card-img object-fit-cover rounded-top-3"
+        src="assets/images/gallery-images/10380637.jpg"
+        alt=""
+      />
+      <div class="m-3">
+        <h4 class="text-center">All Bases Puffer Jacket</h4>
+        <div class="d-flex justify-content-center block">
+          <button class="btn btn-purple m-3 w-75 text-uppercase">View</button>
+        </div>
+      </div>
+    </div>
+    <div
+      style="width: 350px; height: auto"
+      class="home-card rounded-3 bg-white shadow my-3 mx-auto mx-lg-3"
+    >
+      <img
+        style="width: 350px; height: 400px"
+        class="home-card-img object-fit-cover rounded-top-3"
+        src="assets/images/gallery-images/10380541.jpg"
+        alt=""
+      />
+      <div class="m-3">
+        <h4 class="text-center">Reflective Trim Jacket</h4>
+        <div class="d-flex justify-content-center block">
+          <button class="btn btn-purple m-3 w-75 text-uppercase">View</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

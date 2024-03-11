@@ -3,6 +3,17 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "src",
+    "paths": {
+      "lightgallery": [
+        "./node_modules/lightgallery/dist/js/lightgallery.min.js"
+      ],
+      "lg-thumbnail": ["./node_modules/lg-thumbnail/lg-thumbnail.min.js"],
+      "lg-fullscreen": ["./node_modules/lg-fullscreen/lg-fullscreen.min.js"],
+      "lg-zoom": ["./node_modules/lg-zoom/lg-zoom.min.js"],
+      "lg-autoplay": ["./node_modules/lg-autoplay/lg-autoplay.min.js"],
+      "lg-share": ["./node_modules/lg-share/lg-share.min.js"],
+      "lg-hash": ["./node_modules/lg-hash/lg-hash.min.js"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

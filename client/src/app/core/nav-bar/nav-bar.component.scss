@@ -21,6 +21,11 @@ a {
     &.active {
         color: #{$green}
     }
+
+    &:hover {
+        color: #{$green};
+        transition: 0.5s; 
+    }
 }
 
 .logo {
@@ -45,6 +50,7 @@ a {
     &:hover {
         color: #{$purple};
 		background-color: #fff;
+        transition: 0.3s;
 	}
 }
 
@@ -54,5 +60,6 @@ a {
     &:hover {
         color: #000;
 		background-color: #fff;
+        transition: 0.3s;
 	}
 }

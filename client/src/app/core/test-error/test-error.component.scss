@@ -20,5 +20,6 @@ $orange: #f27a2a;
     &:hover {
         color: #{$purple};
 		background-color: #fff;
+        transition: 0.3s;
 	}
 }
